@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Crick Stars</string>
+    <string name="title_country_sort">Sort by Country</string>
+    <string name="title_name_sort">Sort by name</string>
+    <string name="title_invert_sort">Invert Sort</string>
+</resources>
