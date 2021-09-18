@@ -1,13 +1,28 @@
 package com.saurabh.crickstars.ui.sortByName
 
+import android.app.DownloadManager
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import com.saurabh.crickstars.MainActivity
+import com.saurabh.crickstars.MySingleton
 import com.saurabh.crickstars.R
 import com.saurabh.crickstars.databinding.FragmentSortByNameBinding
+import org.json.JSONArray
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+import java.util.Calendar.getInstance
 
 class SortByNameFragment : Fragment() {
 
@@ -33,6 +48,7 @@ class SortByNameFragment : Fragment() {
 
         return root
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.sort_invert_menu,menu)

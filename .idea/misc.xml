@@ -5,18 +5,16 @@
       <map>
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/country.xml" value="0.1" />
-        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/fragment_sort_by_country.xml" value="0.1" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/fragment_sort_by_country.xml" value="0.176" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/fragment_sort_by_name.xml" value="0.1" />
-        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/item_country.xml" value="0.11144883485309018" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/item_country.xml" value="0.1270718232044199" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/item_player.xml" value="0.11144883485309018" />
+        <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/item_player_name_wise.xml" value="0.1" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/layout/sort_by_name.xml" value="0.2421875" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Saurabh/AndroidStudioProjects/CrickStars/app/src/main/res/menu/sort_invert_menu.xml" value="0.1" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sort_by_name.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

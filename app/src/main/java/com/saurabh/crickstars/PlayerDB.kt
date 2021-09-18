@@ -14,6 +14,7 @@ abstract class PlayerDB : RoomDatabase(){
 
     //to avoid multi instances
     companion object{
+
         @Volatile
         private var INSTANCE: PlayerDB?= null
 
