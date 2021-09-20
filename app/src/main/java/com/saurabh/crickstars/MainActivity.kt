@@ -69,12 +69,12 @@ class MainActivity : AppCompatActivity() {
                 for(country in countries){
 
                     //getting the object of the country
-                    val afgJSONArray=it.getJSONArray(country)
+                    val allJSONArray=it.getJSONArray(country)
 
-                    for(i in 0 until afgJSONArray.length()){
+                    for(i in 0 until allJSONArray.length()){
 
                         //getting on player object
-                        val playerJSONObject =afgJSONArray.getJSONObject(i)
+                        val playerJSONObject =allJSONArray.getJSONObject(i)
 
                         //extracting details of the player from the object
 
@@ -102,6 +102,8 @@ class MainActivity : AppCompatActivity() {
                         //adding the player to the table
                         addRowInTable(viewModel,player)
 
+
+
                         Log.d(ContentValues.TAG, "getResponse : $name")
                     }
                 }
@@ -114,6 +116,8 @@ class MainActivity : AppCompatActivity() {
 
         MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
 
+        //deleting the database
+        applicationContext.deleteDatabase("player_DB")
     }
 
     @InternalCoroutinesApi

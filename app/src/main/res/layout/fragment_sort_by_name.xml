@@ -7,4 +7,14 @@
     android:background="#402F55"
     tools:context=".ui.sortByName.SortByNameFragment">
 
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_player_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:listitem="@layout/item_player_name_wise"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
