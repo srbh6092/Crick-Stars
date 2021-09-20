@@ -12,21 +12,25 @@ import kotlinx.coroutines.launch
 @InternalCoroutinesApi
 class PlayerViewModel(application:Application):AndroidViewModel(application) {
 
+
+    //declaring
     private val repo:PlayerRepo
     val allPlayer: LiveData<List<Player>>
     val allPlayerFNameAsc: LiveData<List<Player>>
     val allPlayerLNameAsc: LiveData<List<Player>>
-    private val allAfghanPlayer: LiveData<List<Player>>
-    private val allAusPlayer: LiveData<List<Player>>
-    private val allBanPlayer: LiveData<List<Player>>
-    private val allEngPlayer: LiveData<List<Player>>
-    private val allIndPlayer: LiveData<List<Player>>
-    private val allPakPlayer: LiveData<List<Player>>
-    private val allNewZPlayer: LiveData<List<Player>>
-    private val allSAPlayer: LiveData<List<Player>>
-    private val allSriLPlayer: LiveData<List<Player>>
-    private val allWIPlayer: LiveData<List<Player>>
+    val allAfghanPlayer: LiveData<List<Player>>
+    val allAusPlayer: LiveData<List<Player>>
+    val allBanPlayer: LiveData<List<Player>>
+    val allEngPlayer: LiveData<List<Player>>
+    val allIndPlayer: LiveData<List<Player>>
+    val allPakPlayer: LiveData<List<Player>>
+    val allNewZPlayer: LiveData<List<Player>>
+    val allSAPlayer: LiveData<List<Player>>
+    val allSriLPlayer: LiveData<List<Player>>
+    val allWIPlayer: LiveData<List<Player>>
 
+
+    //initialising
     init {
         val dao = PlayerDB.getDB(application).getPlayerDao()
         repo = PlayerRepo(dao)

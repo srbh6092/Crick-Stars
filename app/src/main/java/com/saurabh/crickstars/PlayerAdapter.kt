@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.text.bold
+import androidx.core.text.buildSpannedString
 import androidx.recyclerview.widget.RecyclerView
 import com.saurabh.crickstars.model.Player
 import com.saurabh.crickstars.ui.sortByName.SortByNameFragment
@@ -31,11 +33,19 @@ class PlayerAdapter(
 
     override fun onBindViewHolder(holder: PlayerAdapter.PlayerViewHolder, position: Int) {
         val player = allPlayers[position]
-        holder.name.text = player.first_name+" "+player.last_name
-        holder.country.text = player.country
-        if (player.captain) {
-            holder.name.setTypeface(null, Typeface.BOLD)
-            holder.country.setTypeface(null, Typeface.BOLD)
+        if (player.captain) { //if the player is a captain
+            //making the texts
+            holder.name.text = buildSpannedString {
+                bold { append("${player.first_name + " " + player.last_name}") }
+            }
+            holder.country.text = buildSpannedString {
+                bold { append("${player.country}") }
+            }
+        }
+        else { //else
+            //putting default style text
+            holder.name.text=player.first_name+" "+player.last_name
+            holder.country.text=player.country
         }
     }
 

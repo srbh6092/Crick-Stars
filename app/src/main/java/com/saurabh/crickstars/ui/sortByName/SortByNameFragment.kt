@@ -71,12 +71,12 @@ class SortByNameFragment : Fragment() {
 
     @InternalCoroutinesApi
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
 
             //when Top-Right sort button is clicked
+        when(item.itemId){
             R.id.invert_sort->{
 
-                //if  item is sorted by last name, sort sort by first name
+                //if item is sorted by last name, sort by first name
                 if(lastNameSort){
                     viewModel.allPlayerFNameAsc.observe(viewLifecycleOwner, Observer {list ->
                         list?.let {
@@ -86,8 +86,7 @@ class SortByNameFragment : Fragment() {
                     lastNameSort=false
                     Toast.makeText(context,"Sorting by First Name",Toast.LENGTH_LONG).show()
                 }
-
-                //if  item is sorted by first name, sort sort by last name
+                //if item is sorted by first name, sort by last name
                 else{
                     viewModel.allPlayerLNameAsc.observe(viewLifecycleOwner, Observer {list ->
                         list?.let {
